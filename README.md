@@ -9,7 +9,7 @@ GoDaddy
 * Create your domain
 * Select DNS
 * Edit A Record
-* * Input the IP Address of your site (information found on the site hosting your website) 
+  * Input the IP Address of your site (information found on the site hosting your website) 
 * Edit or Create CNAME
   * Input the web address of your site. Note: this can take 24-hours to propagate
 * Go to fowarding - this step ensures the naked site work 
