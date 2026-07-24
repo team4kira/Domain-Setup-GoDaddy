@@ -23,7 +23,7 @@ Azure (Note settings may differ for other Hosts)
  
 # GitHub Pages + WHC Custom Domain Setup
 
-This guide explains how to connect a custom domain from WHC to a GitHub Pages site without including any site-specific details. GitHub requires DNS records for the root domain and the `www` subdomain, while WHC is the place where those DNS records are created and edited.
+This guide explains how to connect a custom domain from WHC to a GitHub Pages. GitHub requires DNS records for the root domain and the `www` subdomain, while WHC is the place where those DNS records are created and edited.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Before starting, make sure the GitHub Pages site already works on its default `u
 
 ## WHC side
 
-Log in to WHC and open the domain's DNS management area through **Client Area → Domains → Domain Management Tools → DNS Zone Editor**. This is where the DNS records for the domain should be added, changed, or removed.[2]
+Log in to WHC and open the domain's DNS management area through **Client Area → Domains → Domain Management Tools → DNS Zone Editor**. This is where the DNS records for the domain should be added, changed, or removed.
 
 ### Add root domain A records
 
@@ -42,7 +42,7 @@ For the apex or root domain (the version without `www`), add four `A` records us
 - `185.199.110.153`
 - `185.199.111.153`
 
-These IPs are published by GitHub for GitHub Pages and are not unique per account or repository.[1]
+These IPs are published by GitHub for GitHub Pages and are not unique per account or repository.
 
 ### Add the www CNAME record
 
