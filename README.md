@@ -1,23 +1,25 @@
 # Domain-Setup
 
+# Azure + Go Daddy Custom Domain Setup
+
 Pre-requisites: 
 * A working website, with web address and IP Address of Web Application.
   * Azure and AWS offers some free hosting options. They both provide SSL Certifcates. 
 
-GoDaddy 
+## GoDaddy Side 
 * Sign into GoDaddy Account
 * Create your domain
-* Select DNS
+* Select `DNS`
 * Edit A Record
-  * Input the IP Address of your site (information found on the site hosting your website) 
+  * Input the IP Address of your site (information found on Azure website) 
 * Edit or Create CNAME
   * Input the web address of your site. Note: this can take 24-hours to propagate
 * Go to fowarding - this step ensures the naked site work 
-  * Recommend https://
-  * Enter your domain name with the www. 
-  * Select Permanent (301)
+  * Recommend `https://`
+  * Enter your domain name with the `www`
+  * Select `Permanent (301)`
  
-Azure (Note settings may differ for other Hosts)
+## Azure Side
 * Select Custome Domain
   * Select Add - input the GoDaddy Domain as an Alias
  
