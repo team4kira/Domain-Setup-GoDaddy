@@ -2,7 +2,7 @@
 
 # Azure + GoDaddy Custom Domain Setup
 
-## Prerequisites: 
+## Prerequisites
 * A working website, with web address and IP Address of Web Application.
   * Azure and AWS offers some free hosting options. They both provide SSL Certifcates. 
 
