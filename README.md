@@ -1,6 +1,6 @@
 # Domain-Setup
 
-# Azure + Go Daddy Custom Domain Setup
+# Azure + GoDaddy Custom Domain Setup
 
 Pre-requisites: 
 * A working website, with web address and IP Address of Web Application.
