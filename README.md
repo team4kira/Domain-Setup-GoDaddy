@@ -55,23 +55,23 @@ GitHub's documentation says the `www` subdomain should point to the GitHub Pages
 
 ### Remove conflicting records
 
-Remove old or conflicting `A`, `AAAA`, or `CNAME` records for the same hostnames if they point somewhere other than GitHub Pages, because extra DNS records can prevent GitHub from validating the domain or issuing an HTTPS certificate.[3][4] Avoid wildcard DNS records like `*` because GitHub warns they can create takeover risk and interfere with safe custom-domain use.
+Remove old or conflicting `A`, `AAAA`, or `CNAME` records for the same hostnames if they point somewhere other than GitHub Pages, because extra DNS records can prevent GitHub from validating the domain or issuing an HTTPS certificate. Avoid wildcard DNS records like `*` because GitHub warns they can create takeover risk and interfere with safe custom-domain use.
 
 ### Optional TXT verification record
 
-If GitHub provides a TXT record for domain verification, add it in WHC exactly as shown in GitHub's instructions.[4] GitHub recommends leaving the TXT record in place after verification to help protect the domain against takeover issues.
+If GitHub provides a TXT record for domain verification, add it in WHC exactly as shown in GitHub's instructions. GitHub recommends leaving the TXT record in place after verification to help protect the domain against takeover issues.
 
 ## GitHub side
 
-In the GitHub repository that publishes the site, go to **Settings → Pages** and enter the custom domain in the Pages configuration.[1] This tells GitHub which domain to serve for the Pages site and may automatically create or update the repository's `CNAME` file depending on the publishing method.
+In the GitHub repository that publishes the site, go to **Settings → Pages** and enter the custom domain in the Pages configuration. This tells GitHub which domain to serve for the Pages site and may automatically create or update the repository's `CNAME` file depending on the publishing method.
 
 ### Set the custom domain
 
-Choose the preferred live domain and enter it exactly in the **Custom domain** field in GitHub Pages settings.[1] If the goal is to use the `www` version as the main address, enter the `www` domain there and make sure the corresponding `www` CNAME record exists in WHC.
+Choose the preferred live domain and enter it exactly in the **Custom domain** field in GitHub Pages settings. If the goal is to use the `www` version as the main address, enter the `www` domain there and make sure the corresponding `www` CNAME record exists in WHC.
 
 ### Enable HTTPS
 
-Once GitHub detects the DNS correctly and provisions the certificate, enable **Enforce HTTPS** in the Pages settings.[1][3] If HTTPS is unavailable, GitHub notes that extra DNS records or incorrect DNS configuration can block certificate generation.
+Once GitHub detects the DNS correctly and provisions the certificate, enable **Enforce HTTPS** in the Pages settings. If HTTPS is unavailable, GitHub notes that extra DNS records or incorrect DNS configuration can block certificate generation.
 
 ### Re-add the domain if provisioning gets stuck
 
@@ -100,6 +100,6 @@ If the domain is correctly configured in DNS but HTTPS or validation remains stu
 
 ## Troubleshooting
 
-If the site still shows a registrar parking page or an old hosting page, DNS propagation may still be in progress or a conflicting record may still exist.[1][3] GitHub notes that DNS changes can take up to 24 hours to propagate, and in practice some resolvers may take longer.
+If the site still shows a registrar parking page or an old hosting page, DNS propagation may still be in progress or a conflicting record may still exist. GitHub notes that DNS changes can take up to 24 hours to propagate, and in practice some resolvers may take longer.
 
-If the root domain works but `www` does not, the most common cause is that the `www` record is not pointing to `username.github.io` correctly.[1] If HTTP works but HTTPS does not, GitHub may still be waiting to validate the domain and issue the certificate, or extra DNS records may be interfering with HTTPS provisioning.
+If the root domain works but `www` does not, the most common cause is that the `www` record is not pointing to `username.github.io` correctly. If HTTP works but HTTPS does not, GitHub may still be waiting to validate the domain and issue the certificate, or extra DNS records may be interfering with HTTPS provisioning.
