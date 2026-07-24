@@ -86,7 +86,7 @@ If the domain is correctly configured in DNS but HTTPS or validation remains stu
 | `@` | `A` | `185.199.110.153` |
 | `@` | `A` | `185.199.111.153` |
 | `www` | `CNAME` | `username.github.io`|
-| Verification host | `TXT` | Value provided by GitHub, if requested |
+| Verification host | `TXT` | Value provided by GitHub, if requested. Found in general settings - pages |
 
 ## Order of operations
 
@@ -94,7 +94,7 @@ If the domain is correctly configured in DNS but HTTPS or validation remains stu
 2. In WHC, add the four root `A` records and the `www` `CNAME` record.
 3. Remove conflicting or leftover parking records for the same hosts.
 4. In GitHub Pages settings, enter the custom domain.
-5. Add the optional GitHub TXT verification record if prompted.
+5. Add the optional GitHub TXT verification record if prompted. (recommended)
 6. Wait for DNS propagation and for GitHub to complete domain validation.
 7. Enable **Enforce HTTPS** once it becomes available.
 
